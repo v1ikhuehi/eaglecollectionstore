@@ -1,33 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+input,
+textarea,
+select {
+  @apply border border-gray-200 rounded-sm w-full mb-2 p-1 outline-none focus-visible:border-light-green text-black;
+  @apply shadow-sm;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+a:hover {
+  @apply text-sharp-pink;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+button:hover {
+  @apply text-light-green;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1,
+h2,
+h3 {
+  @apply font-robotoFont text-light-green;
+}
+
+.menuitems {
+  @apply px-2 py-1;
+}
+.menuitems:hover {
+  @apply bg-white px-2 py-1 rounded-md;
+}
+
+.hamburger-menu {
+  @apply hover:bg-white hover:text-sharp-pink hover:w-screen flex justify-center items-center;
+}
+
+.image-full-width {
+  width: 100%;
+  height: auto;
 }
