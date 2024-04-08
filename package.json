@@ -9,15 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.4",
+    "@stripe/stripe-js": "^3.3.0",
+    "aos": "^2.3.4",
+    "axios": "^1.6.8",
+    "mongoose": "^8.3.1",
+    "next": "14.1.4",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-easy-panzoom": "^0.4.4",
+    "react-hot-toast": "^2.4.1",
+    "react-modern-drawer": "^1.2.2",
+    "react-social-icons": "^6.16.0",
+    "react-spinners": "^0.13.8",
+    "resend": "^3.2.0",
+    "stripe": "^14.24.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
   }
 }
